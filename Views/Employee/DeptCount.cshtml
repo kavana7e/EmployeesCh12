@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Department Statistics";
+}
+
+<h2>Department Statistics</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Department ID
+        </th>
+        <th>
+            #Employees
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.DepartmentID
+            </td>
+            <td>
+                @item.DepartmentCount
+            </td>
+        </tr>
+    }
+</table>
